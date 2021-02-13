@@ -5,6 +5,7 @@ import List from './Components/List';
 import Pay from './Components/Pay';
 import Button from './Components/Buttons';
 
+
 class App extends React.Component{
   constructor(props) {
     super(props);
@@ -35,7 +36,7 @@ class App extends React.Component{
   add(name, price) {
     const obj = {
       name: name,
-      price: price
+      price: parseInt(price)
     }
     const newList = this.state.items
     newList.push(obj)
@@ -51,7 +52,7 @@ class App extends React.Component{
       case "list" :
         return <List listItems = {this.state.items}></List>
       case "pay" : 
-      return <Pay></Pay> 
+      return <Pay items={this.state.items}></Pay> 
     }
   }
 

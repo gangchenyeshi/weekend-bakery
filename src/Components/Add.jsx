@@ -11,13 +11,13 @@ class Add extends React.Component{
         this.updateProductName = this.updateProductName.bind(this);
     }
     updatePrice (event) {
-        console.log("price :" )
+        console.log("price :",  )
         this.setState({
             price : event.target.value
         })
     }
     updateProductName (event) {
-        console.log("Product :" )
+        console.log("Product :",  )
         this.setState({
             productName : event.target.value
         })

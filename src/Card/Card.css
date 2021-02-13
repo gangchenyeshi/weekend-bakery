@@ -1,0 +1,6 @@
+.bakeryImage {
+    width: 250px;
+}
+.bakeryImage:hover {
+    border: 1px solid black;
+}
